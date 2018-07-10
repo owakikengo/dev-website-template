@@ -1,0 +1,13 @@
+.pc {
+    display: block;
+    @include sp {
+        display: none !important;
+    }
+}
+
+.sp {
+    display: none !important;
+    @include sp {
+        display: block !important;
+    }
+}

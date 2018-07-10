@@ -1,0 +1,57 @@
+///////////////////////////////
+//mixin
+///////////////////////////////
+@import "_variables";
+@mixin pcbk1 {
+    @media screen and (max-width: #{$pcbk1-width}) {
+        @content;
+    }
+}
+@mixin pcbk2 {
+    @media screen and (max-width: #{$pcbk2-width}) {
+        @content;
+    }
+}
+@mixin pcbk3 {
+    @media screen and (max-width: #{$pcbk3-width}) {
+        @content;
+    }
+}
+@mixin tb {
+    @media screen and (max-width: #{$tb-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin bk1 {
+    @media screen and (max-width: #{$bk1-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin bk2 {
+    @media screen and (max-width: #{$bk2-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: #{$sp-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin iphone5 {
+    @media screen and (max-width: #{$iphone5-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    clear: both;
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
